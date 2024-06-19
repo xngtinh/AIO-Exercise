@@ -3,6 +3,7 @@ import math
 import random
 
 # Calculate factorial value
+mess = "N must be a positive integer"
 
 
 def factorial(n):
@@ -15,7 +16,7 @@ def factorial(n):
 
 def calculate_sin(x, n):
     if n <= 0 or not isinstance(n, int):
-        raise ValueError("n must be a positive integer")
+        raise ValueError(mess)
 
     value = 0
     for i in range(n):
@@ -26,7 +27,7 @@ def calculate_sin(x, n):
 
 def calculate_cos(x, n):
     if n <= 0 or not isinstance(n, int):
-        raise ValueError("n must be a positive integer")
+        raise ValueError(mess)
 
     value = 0
     for i in range(n):
@@ -37,7 +38,7 @@ def calculate_cos(x, n):
 
 def calculate_sinh(x, n):
     if n <= 0 or not isinstance(n, int):
-        raise ValueError("n must be a positive integer")
+        raise ValueError(mess)
 
     value = 0
     for i in range(n):
@@ -48,7 +49,7 @@ def calculate_sinh(x, n):
 
 def calculate_cosh(x, n):
     if n <= 0 or not isinstance(n, int):
-        raise ValueError("n must be a positive integer")
+        raise ValueError(mess)
 
     value = 0
     for i in range(n):
