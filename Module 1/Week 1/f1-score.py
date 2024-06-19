@@ -3,6 +3,8 @@ import math
 import random
 
 # Calculate F1-score
+
+
 def f1_score(tp, fp, fn):
     if type(tp) is not int:
         print("tp must be int")
@@ -25,6 +27,7 @@ def f1_score(tp, fp, fn):
     print("Precision is ", precision)
     print("Recall is ", recall)
     print("f1-score is ", f1)
+
 
 if __name__ == "__main__":
     f1_score(tp="a", fp=3, fn=4)

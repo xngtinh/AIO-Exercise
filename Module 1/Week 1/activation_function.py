@@ -3,16 +3,20 @@ import math
 import random
 
 # Check value
+
+
 def is_number(n):
-    try :
-        float ( n ) # Type - casting the string to ‘float ‘.
-                    # If string is not a valid ‘float ‘ ,
-                    # it ’ll raise ‘ValueError ‘ exception
-    except ValueError :
+    try:
+        float(n)  # Type - casting the string to ‘float ‘.
+        # If string is not a valid ‘float ‘ ,
+        # it ’ll raise ‘ValueError ‘ exception
+    except ValueError:
         return False
     return True
 
 # Calculate activation function
+
+
 def calculate_activation_function():
     value = 0
     x = input("Input x = ")
@@ -22,7 +26,8 @@ def calculate_activation_function():
         sys.exit()
 
     x = float(x)
-    activation_function = input("Input activation function ( sigmoid | relu | elu ) : ")
+    activation_function = input(
+        "Input activation function ( sigmoid | relu | elu ) : ")
 
     if activation_function == "sigmoid":
         value = 1 / (1 + math.exp(-x))
@@ -39,8 +44,9 @@ def calculate_activation_function():
     else:
         print(f"{activation_function} is not supported")
         sys.exit()
-    
+
     print(f"{activation_function}: f({x}) = {value}")
+
 
 if __name__ == "__main__":
     calculate_activation_function()
